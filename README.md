@@ -11,7 +11,7 @@ For Windows is required [PyCaw](https://github.com/AndreMiras/pycaw)
 `pip install pycaw`
 
 
-For Windows is required [alsaaudio](https://pypi.org/project/pyalsaaudio/)
+For Linux is required [alsaaudio](https://pypi.org/project/pyalsaaudio/)
 
 `pip install pyalsaaudio`
 
