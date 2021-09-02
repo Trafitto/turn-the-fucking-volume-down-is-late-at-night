@@ -14,12 +14,14 @@ def set_volume(new_volume):
 
     # Get current volume
     current_volume = volume.GetMasterVolumeLevel()
+
     try:
         new_volume = WINDOWS_VOLUME_MAP[new_volume]
     except KeyError:
         print(f'Volume: {volume} is not supported')
         new_volume = WINDOWS_VOLUME_MAP[DEFAULT_VOLUME]
-
     if new_volume < current_volume:
         volume.SetMasterVolumeLevel(new_volume, None)
         print(f'Set new volume to {new_volume} db')
+    else:
+        print('Volume is lower')

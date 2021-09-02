@@ -8,5 +8,6 @@ def set_volume(new_volume):
     if new_volume < current_volume:
         mixer.setvolume(new_volume)
         print(f'Set new volume to {new_volume}%')
-    
+    else:
+        print('Volume is lower')
 
