@@ -1,4 +1,3 @@
-import math
 import osascript
 
 def set_volume(new_volume):
