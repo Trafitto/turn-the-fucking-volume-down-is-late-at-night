@@ -15,4 +15,5 @@ elif 'win32'  in sys.platform:
     from src.windows.volume import set_volume
     set_volume(volume)
 elif 'darwin'  in sys.platform:
-    print('Platform currently not supported')
+    from src.darwin.volume import set_volume
+    set_volume(volume)
